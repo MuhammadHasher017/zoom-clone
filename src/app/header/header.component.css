@@ -1,0 +1,10 @@
+.mat-toolbar {
+  background-color: #512888;
+}
+ :any-link{
+   color : white;
+ }
+
+ .active {
+   background-color: red;
+ }

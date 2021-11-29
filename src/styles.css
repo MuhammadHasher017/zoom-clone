@@ -1,0 +1,24 @@
+html, body {
+  height: 100%;
+  background-color: lavender;
+}
+* {
+  font-family: Comfortaa;
+}
+
+.main-container {
+  height:85%;
+  padding-bottom: 1%;
+
+}
+
+/*panel class has to be define here i guess*/
+.snackbar-class {
+  background: #d22929;
+  color : white;
+}
+
+.video {
+  border : 3px solid #512888;
+}
+

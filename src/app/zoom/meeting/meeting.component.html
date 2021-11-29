@@ -1,0 +1,36 @@
+<!--for large screen and mobile -->
+<p class="text-center" style="padding-top: 1%">{{status}}</p>
+<div fxLayout="column" fxLayoutAlign="center center">
+  <mat-form-field appearance="fill">
+    <input type="text"
+           matInput
+           [value]="this.room"
+           readonly
+           #inputMeetingId>
+    <mat-icon  (click)="copyMeetingId(inputMeetingId)" matSuffix >
+      content_copy</mat-icon>
+  </mat-form-field>
+<div class="main-container">
+  <div  class="m-3" [fxLayout]="this.fxAlignment" fxLayoutAlign="center center">
+    <video  class="video" [width]="this.width" [height]="this.height"  autoplay controls  #remoteVideo  [hidden]="!isConnected" ></video>
+    <video  class="video" [width]="this.width" [height]="this.height"  autoplay controls #localVideo ></video>
+  </div>
+  <div  fxLayout  fxLayoutAlign="space-around center">
+    <button mat-raised-button #endButton (click)="closeVideoConnection(); endButton.disabled=true;" [disabled]="!this.isConnected" ><mat-icon>call_end</mat-icon>End Meeting.</button>
+  </div>
+</div>
+</div>
+
+
+<ngx-spinner
+  name="MainScreenSpinner"
+  bdColor = "rgba(0,0,0,0.6)"
+  size = "medium" color = "#512888"
+  type = "square-jelly-box" [fullScreen] = "true"
+><p style="color: white" > Searching.. </p>
+</ngx-spinner>
+
+
+
+
+

@@ -1,0 +1,78 @@
+
+<!--  for large screen-->
+<span fxShow.gt-sm="true" fxHide.lt-md="true">
+  <div  class="text-center main-container" fxLayout fxLayoutAlign="center center">
+    <div fxFlex="10"></div>
+
+    <div   fxLayout="column" fxFlex="20">
+      <h1 > Omegle<br> Meets <br> Zoom.</h1>
+      <p> Join The Most <br>Fascinating Mixture<br> of two <br>World Best Apps</p>
+      <button  mat-raised-button color="primary" style="margin-bottom: 5%" routerLink="/zoom"><mat-icon>video_call</mat-icon> Call Someone you know!</button>
+      <button  mat-raised-button color="warn" routerLink="/omegle"><mat-icon>video_call</mat-icon> Call Someone you dont know!</button>
+    </div>
+    <div fxFlex="10"></div>
+    <div >
+      <img src="assets/Main.svg"/>
+
+    </div>
+
+
+  </div>
+
+  <div  class="text-center main-container" style="padding-top: 25%" fxLayout fxLayoutAlign="center center">
+    <div fxFlex="10"></div>
+
+    <div  fxFlex="20">
+      <h1 >Connect With The One You Love or Meet a Stranger!</h1>
+      <p > Talk with your family or friends at any instant.<br> Bored? Meet any stranger from any corner of the world!</p>
+    </div>
+    <div fxFlex="10"></div>
+    <div >
+      <img   src="assets/Meeting.svg"/>
+    </div>
+  </div>
+
+    <div  class="text-center main-container" style="padding-top: 25%" fxLayout fxLayoutAlign="center center">
+    <div fxFlex="10"></div>
+
+    <div  fxFlex="20">
+      <h1 >And Its Absolutely Mobile Friendly!</h1>
+    </div>
+    <div fxFlex="10"></div>
+    <div >
+      <img   src="assets/mobile.svg"/>
+    </div>
+  </div>
+
+
+</span>
+
+
+
+
+
+
+<!--for mobile screen-->
+<span fxShow.lt-md="true" fxHide.gt-sm="true">
+    <div class="text-center m-5" fxLayout="column">
+      <h1 > Omegle Meets Zoom.</h1>
+      <img src="assets/Main.svg" />
+      <h4> Join The Most Fascinating Mixture of two World Best Apps</h4>
+      <button  mat-raised-button color="primary" style="margin-bottom: 5%" routerLink="/zoom"><mat-icon>video_call</mat-icon> Call Someone you know!</button>
+      <button  mat-raised-button color="warn" routerLink="/omegle"><mat-icon>video_call</mat-icon> Call Someone you dont know!</button>
+
+  </div>
+
+  <div class="m-5 text-center" style="padding-top: 20%"  fxLayout="column">
+    <h1 >Connect With The One You Love or Meet a Stranger!</h1>
+      <img src="assets/Meeting.svg" />
+      <h4 > Talk with your family or friends at any instant.<br> Bored? Meet any stranger from any corner of the world!</h4>
+    </div>
+
+    <div class="m-5 text-center" style="padding-top: 20%"   fxLayout="column">
+    <h1 >And Its Absolutely Mobile Friendly!</h1>
+      <img src="assets/mobile.svg" />
+    </div>
+
+</span>
+

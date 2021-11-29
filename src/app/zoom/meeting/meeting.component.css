@@ -1,0 +1,8 @@
+.mat-icon {
+  cursor : pointer;
+}
+
+.mat-raised-button{
+  background-color: red;
+  color : white
+}
